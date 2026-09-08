@@ -3,40 +3,56 @@ window.FORM_CONFIG = {
   "repo": "phonist_form",
   "product": "phonist",
   "sourceForm": "phonist.html",
-  "context": "stolen-phone interactive archive",
-  "motif": "▣",
-  "media": "16 foto terpilih + 4 file musik MP3",
+  "context": "smart lockscreen ios & terminal secret clearance archive",
+  "motif": "✆",
+  "media": "6 foto (2 lockscreen + 4 gallery) + 1 file musik MP3",
   "theme": "phone",
+  "palette": [
+    "#0A0A0C",
+    "#18181B",
+    "#3B82F6",
+    "#10B981",
+    "#F4F4F5",
+    "#818CF8"
+  ],
+  "price": 25000,
   "sections": [
     {
       "id": "02",
-      "title": "lockscreen & device identity",
+      "title": "core identity & birthday lockscreen",
       "fields": [
         {
-          "key": "owner_name",
-          "label": "nama pemilik smartphone",
-          "placeholder": "isi nama pemilik smartphone sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "birthday_date",
-          "label": "tanggal ulang tahun / format jam lockscreen",
-          "placeholder": "isi tanggal ulang tahun / format jam lockscreen sesuai pesanan",
+          "key": "recipient_name",
+          "label": "nama teman / yang berulang tahun (recipient)",
+          "placeholder": "default: selion",
           "long": false,
           "required": false
         },
         {
           "key": "sender_name",
-          "label": "nama pengirim",
-          "placeholder": "isi nama pengirim sesuai pesanan",
+          "label": "nama pengirim / bestie (sender)",
+          "placeholder": "default: kenzo",
           "long": false,
           "required": false
         },
         {
-          "key": "carrier_tag",
-          "label": "nama operator / tag status bar",
-          "placeholder": "isi nama operator / tag status bar sesuai pesanan",
+          "key": "birthday_date",
+          "label": "tanggal ulang tahun",
+          "placeholder": "default: november 6, 2026",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "age",
+          "label": "umur yang dirayakan",
+          "placeholder": "default: 18",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "lockscreen_date",
+          "label": "tampilan hari & tanggal lockscreen",
+          "placeholder": "default: friday, november 6",
           "long": false,
           "required": false
         }
@@ -44,19 +60,33 @@ window.FORM_CONFIG = {
     },
     {
       "id": "03",
-      "title": "step 1 — messages app (chat intro)",
+      "title": "lockscreen dynamic notifications (4 messages)",
       "fields": [
         {
-          "key": "chat_bubble1",
-          "label": "balon chat 1 (dari pengirim)",
-          "placeholder": "isi balon chat 1 (dari pengirim) sesuai pesanan",
+          "key": "notif_1",
+          "label": "notif 1 (11:58 pm · kenzo)",
+          "placeholder": "default: yo selion, u still awake?",
           "long": false,
           "required": false
         },
         {
-          "key": "chat_bubble2",
-          "label": "balon chat 2 (pilihan respon)",
-          "placeholder": "isi balon chat 2 (pilihan respon) sesuai pesanan",
+          "key": "notif_2",
+          "label": "notif 2 (12:00 am · kenzo)",
+          "placeholder": "default: it's officially midnight right now. happy 18th birthday my brother!!",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "notif_3",
+          "label": "notif 3 (12:00 am · kenzo)",
+          "placeholder": "default: welcome to adulthood man. left something inside your phone.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "notif_4",
+          "label": "notif 4 (clearance status)",
+          "placeholder": "default: accessing selion's 18th birthday clearance > why is this on my hand?",
           "long": false,
           "required": false
         }
@@ -64,157 +94,66 @@ window.FORM_CONFIG = {
     },
     {
       "id": "04",
-      "title": "step 2 — memory gallery (6 memory cards)",
+      "title": "terminal clearance & confidential letter",
       "fields": [
         {
-          "key": "mem_cap1",
-          "label": "caption memory 1",
-          "placeholder": "isi caption memory 1 sesuai pesanan",
+          "key": "secret_heading",
+          "label": "judul clearance letter",
+          "placeholder": "default: a confidential letter from kenzo.",
           "long": false,
           "required": false
         },
         {
-          "key": "mem_cap2",
-          "label": "caption memory 2",
-          "placeholder": "isi caption memory 2 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "mem_cap3",
-          "label": "caption memory 3",
-          "placeholder": "isi caption memory 3 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "mem_cap4",
-          "label": "caption memory 4",
-          "placeholder": "isi caption memory 4 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "mem_cap5",
-          "label": "caption memory 5",
-          "placeholder": "isi caption memory 5 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "mem_cap6",
-          "label": "caption memory 6",
-          "placeholder": "isi caption memory 6 sesuai pesanan",
-          "long": false,
+          "key": "secret_message",
+          "label": "isi surat rahasia clearance terminal",
+          "placeholder": "default: to selion, on your 18th birthday: they say the people who enter your life and make you feel truly understood are rare, and having you as someone so important to me is something i will always cherish...",
+          "long": true,
           "required": false
         }
       ]
     },
     {
       "id": "05",
-      "title": "step 3 — mini interactive quiz",
+      "title": "imessage chat conversation (full dialogue)",
       "fields": [
         {
-          "key": "q1_text",
-          "label": "pertanyaan kuis 1",
-          "placeholder": "isi pertanyaan kuis 1 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q1_ans",
-          "label": "jawaban kuis 1",
-          "placeholder": "isi jawaban kuis 1 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q2_text",
-          "label": "pertanyaan kuis 2",
-          "placeholder": "isi pertanyaan kuis 2 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q2_ans",
-          "label": "jawaban kuis 2",
-          "placeholder": "isi jawaban kuis 2 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q3_text",
-          "label": "pertanyaan kuis 3",
-          "placeholder": "isi pertanyaan kuis 3 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q3_ans",
-          "label": "jawaban kuis 3",
-          "placeholder": "isi jawaban kuis 3 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q4_text",
-          "label": "pertanyaan kuis 4",
-          "placeholder": "isi pertanyaan kuis 4 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "q4_ans",
-          "label": "jawaban kuis 4",
-          "placeholder": "isi jawaban kuis 4 sesuai pesanan",
-          "long": false,
+          "key": "chat_flow",
+          "label": "dialog chat imessage (lengkap)",
+          "placeholder": "default: yo selion -> u still awake? -> happy 18th birthday my brother!! -> welcome to adulthood man...",
+          "long": true,
           "required": false
         }
       ]
     },
     {
       "id": "06",
-      "title": "step 4 — camera roll (6 photo captions)",
+      "title": "camera roll gallery (4 candid photos)",
       "fields": [
         {
-          "key": "roll_cap1",
-          "label": "caption camera roll 1",
-          "placeholder": "isi caption camera roll 1 sesuai pesanan",
+          "key": "cam_1",
+          "label": "foto 1 · caption & tag",
+          "placeholder": "default: brotherhood since day one. (candid moments)",
           "long": false,
           "required": false
         },
         {
-          "key": "roll_cap2",
-          "label": "caption camera roll 2",
-          "placeholder": "isi caption camera roll 2 sesuai pesanan",
+          "key": "cam_2",
+          "label": "foto 2 · caption & tag",
+          "placeholder": "default: chaotic late night rides. (everyday vibes)",
           "long": false,
           "required": false
         },
         {
-          "key": "roll_cap3",
-          "label": "caption camera roll 3",
-          "placeholder": "isi caption camera roll 3 sesuai pesanan",
+          "key": "cam_3",
+          "label": "foto 3 · caption & tag",
+          "placeholder": "default: always got your back. (quiet memories)",
           "long": false,
           "required": false
         },
         {
-          "key": "roll_cap4",
-          "label": "caption camera roll 4",
-          "placeholder": "isi caption camera roll 4 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "roll_cap5",
-          "label": "caption camera roll 5",
-          "placeholder": "isi caption camera roll 5 sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "roll_cap6",
-          "label": "caption camera roll 6",
-          "placeholder": "isi caption camera roll 6 sesuai pesanan",
+          "key": "cam_4",
+          "label": "foto 4 · caption & tag",
+          "placeholder": "default: level 18 unlocked. (sweet 18 legend)",
           "long": false,
           "required": false
         }
@@ -222,73 +161,30 @@ window.FORM_CONFIG = {
     },
     {
       "id": "07",
-      "title": "step 5 — notes app (birthday letter)",
+      "title": "final birthday letter & greeting",
       "fields": [
         {
-          "key": "notes_title",
-          "label": "judul catatan ulang tahun",
-          "placeholder": "isi judul catatan ulang tahun sesuai pesanan",
+          "key": "final_greeting",
+          "label": "greeting penutup",
+          "placeholder": "default: happy 18th birthday, selion.",
           "long": false,
           "required": false
         },
         {
-          "key": "notes_body",
-          "label": "isi surat lengkap (notes app)",
-          "placeholder": "isi isi surat lengkap (notes app) sesuai pesanan",
+          "key": "final_message",
+          "label": "isi surat utama penutup (lengkap)",
+          "placeholder": "default: happy 18th birthday, selion! it honestly feels unreal that you're officially 18 today. from all the late night talks, blasting our favorite tracks with the windows down, inside jokes that make zero sense to anyone else...",
           "long": true,
           "required": false
         },
         {
-          "key": "notes_sign",
-          "label": "tanda tangan catatan",
-          "placeholder": "isi tanda tangan catatan sesuai pesanan",
-          "long": false,
-          "required": false
-        }
-      ]
-    },
-    {
-      "id": "08",
-      "title": "step 6 — music player playlist",
-      "fields": [
-        {
-          "key": "track1",
-          "label": "track 1 — judul & musisi",
-          "placeholder": "isi track 1 — judul & musisi sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "track2",
-          "label": "track 2 — judul & musisi",
-          "placeholder": "isi track 2 — judul & musisi sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "track3",
-          "label": "track 3 — judul & musisi",
-          "placeholder": "isi track 3 — judul & musisi sesuai pesanan",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "track4",
-          "label": "track 4 — judul & musisi",
-          "placeholder": "isi track 4 — judul & musisi sesuai pesanan",
+          "key": "final_sign",
+          "label": "tanda tangan surat penutup",
+          "placeholder": "default: - yours truly, kenzo.",
           "long": false,
           "required": false
         }
       ]
     }
-  ],
-  "palette": [
-    "#356BFF",
-    "#0B0E14",
-    "#161B26",
-    "#F3F6FF",
-    "#7D8CA3",
-    "#60A5FA"
-  ],
-  "price": 24000
+  ]
 };
